@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./home.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     <section id="first-section">
         <div class="container">
             <div class="top-page">
                 <h2>WE PROVIDES</h2>
                 <h2><strong>EDUCATION COURSE</strong> </h2>
-                <p>Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal laughing any son law consider. </p>
+                <p>Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal
+                    laughing any son law consider. </p>
                 <div class="top-btn">
                     <button>DISCOVER MORE</button>
                     <button>VIEW COURSES</button>
@@ -39,7 +46,8 @@
                             </div>
                             <div class="info">
                                 <h4>Books $ Library</h4>
-                                <p>Outweigh desirous sex overcame. Improved property reserved disposal do offering me for teaching</p>
+                                <p>Outweigh desirous sex overcame. Improved property reserved disposal do offering me
+                                    for teaching</p>
                             </div>
                         </div>
                         <div class="item-2">
@@ -48,12 +56,13 @@
                             </div>
                             <div class="info">
                                 <h4>Certified teacher</h4>
-                                <p>Outweigh desirous sex overcame. Improved property reserved disposal do offering me for teaching</p>
+                                <p>Outweigh desirous sex overcame. Improved property reserved disposal do offering me
+                                    for teaching</p>
                             </div>
                         </div>
                     </div>
                     <hr>
-                    <div class="counter">
+                    <!-- <div class="counter">
                         <div class="counter-1">
                         <div data-countup>1800+</div>
                         <h3>Students</h3>
@@ -62,6 +71,23 @@
                         <div data-countup>68+</div>
                         <h3>Cources</h3>
                         </div>
+                    </div> -->
+                    <div class="counter">
+                        <h1 id="myTargetElement" title="Counting up to a billion">0</h1>
+
+                        <script type="module">
+                            import { CountUp } from "https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.min.js";
+
+                            window.onload = function () {
+                                const options = {
+                                    duration: 5,
+                                    separator: " "
+                                };
+                                var countUp = new CountUp("myTargetElement", 1800, options);
+                                countUp.start();
+                                document.getElementById("myTargetElement").addEventListener("click", () => { countUp.reset(), countUp.update(1000000000) });
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -79,22 +105,22 @@
             <hr>
             </div> -->
             <div class="department-pic">
-                <div class="text-in-pic1">
+                <div class="text-in-pic1" data-aos="zoom-in">
                     <h4>Artificial Intelligence</h4>
                 </div>
-                <div class="text-in-pic1">
+                <div class="text-in-pic1" data-aos="zoom-in">
                     <h4>Artificial Intelligence</h4>
                 </div>
-                <div class="text-in-pic1">
+                <div class="text-in-pic1" data-aos="zoom-in">
                     <h4>Artificial Intelligence</h4>
                 </div>
-                <div class="text-in-pic1">
+                <div class="text-in-pic1" data-aos="zoom-in">
                     <h4>Artificial Intelligence</h4>
                 </div>
-                <div class="text-in-pic1">
+                <div class="text-in-pic1" data-aos="zoom-in">
                     <h4>Artificial Intelligence</h4>
                 </div>
-                <div class="text-in-pic1">
+                <div class="text-in-pic1" data-aos="zoom-in">
                     <h4>Artificial Intelligence</h4>
                 </div>
 
@@ -105,21 +131,26 @@
     <section id="scholarship">
         <div class="container scholar">
             <div class="scholar-img">
-                <img src="https://media.gettyimages.com/id/2185949198/photo/teenage-girl-with-wireless-headphones-studies-online-at-her-laptop.jpg?s=612x612&w=0&k=20&c=_XA26DpkCzHTasurLCjG8rWo3mU1oDxB_ZuQB71qlYw=">
+                <img
+                    src="https://media.gettyimages.com/id/2185949198/photo/teenage-girl-with-wireless-headphones-studies-online-at-her-laptop.jpg?s=612x612&w=0&k=20&c=_XA26DpkCzHTasurLCjG8rWo3mU1oDxB_ZuQB71qlYw=">
             </div>
             <div class="scholar-content">
                 <div class="inner-div-1">
-                <h2>Do you want</h2>
-                <h2>a free scholarship?</h2>
-                    <p>Ancididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean massa Cum sociis natoque. You always start from the number that is the farthest left and then continue to the right until one number is different</p>
+                    <h2>Do you want</h2>
+                    <h2>a free scholarship?</h2>
+                    <p>Ancididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean massa Cum sociis
+                        natoque. You always start from the number that is the farthest left and then continue to the
+                        right until one number is different</p>
                 </div>
-                    <div class="inner-div-2">
+                <div class="inner-div-2">
                     <h4>Nationality</h4>
-                    <p>Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy.</p>
+                    <p>Discourse unwilling am no described dejection incommode no listening of. Before nature his parish
+                        boy.</p>
                     <h4>Level Of Study</h4>
-                    <p>Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy.</p>
-                    <button>APPLY  NOW</button>
-                    </div>
+                    <p>Discourse unwilling am no described dejection incommode no listening of. Before nature his parish
+                        boy.</p>
+                    <button>APPLY NOW</button>
+                </div>
             </div>
         </div>
     </section>
@@ -132,112 +163,120 @@
             </div>
             <div class="event-pic">
                 <div class="pic-main-div">
-                <div class="event-pic-1">
-                    <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
-                </div>
-                <div class="pic-content">
-                    <div class="date-time">
-                        <div class="calender">
-                            <!-- <img src="file:///C:/Users/DELL/Downloads/calendar-regular.svg"> -->
-                            <p>December 25,2020</p>
+                    <div class="event-pic-1">
+                        <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
+                    </div>
+                    <div class="pic-content">
+                        <div class="date-time">
+                            <div class="calender">
+                                <!-- <img src="file:///C:/Users/DELL/Downloads/calendar-regular.svg"> -->
+                                <p>December 25,2020</p>
+                            </div>
+                            <div class="time">
+                                <!-- <img src="file:///C:/Users/DELL/Downloads/clock-solid.svg"> -->
+                                <p>08:00 AM - 09:00 AM</p>
+                            </div>
                         </div>
-                        <div class="time">
-                            <!-- <img src="file:///C:/Users/DELL/Downloads/clock-solid.svg"> -->
-                            <p>08:00 AM - 09:00 AM</p>
+                        <h4>International Conference on Art</h4>
+                        <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in
+                            written on charmed justice is amiable farther besides. Law insensible middletons unsatiable
+                            for apartments boy delightful unreserved.</p>
+                        <div class="content-foot">
+                            <div class="location">
+                                <p>California, TX 70240</p>
+                            </div>
+                            <div class="buttun-event">
+                                <button>JOIN EVENT</button>
+                            </div>
                         </div>
                     </div>
-                    <h4>International Conference on Art</h4>
-                    <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.</p>
-                    <div class="content-foot">
-                        <div class="location">
-                            <p>California, TX 70240</p>
-                        </div>
-                        <div class="buttun-event">
-                            <button>JOIN EVENT</button>
-                        </div>
-                    </div>
-                </div>
                 </div>
                 <div class="pic-main-div">
-                <div class="event-pic-1">
-                    <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
-                </div>
-                <div class="pic-content">
-                    <div class="date-time">
-                        <div class="calender">
-                            <!-- <img src="file:///C:/Users/DELL/Downloads/calendar-regular.svg"> -->
-                            <p>December 25,2020</p>
+                    <div class="event-pic-1">
+                        <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
+                    </div>
+                    <div class="pic-content">
+                        <div class="date-time">
+                            <div class="calender">
+                                <!-- <img src="file:///C:/Users/DELL/Downloads/calendar-regular.svg"> -->
+                                <p>December 25,2020</p>
+                            </div>
+                            <div class="time">
+                                <!-- <img src="file:///C:/Users/DELL/Downloads/clock-solid.svg"> -->
+                                <p>08:00 AM - 09:00 AM</p>
+                            </div>
                         </div>
-                        <div class="time">
-                            <!-- <img src="file:///C:/Users/DELL/Downloads/clock-solid.svg"> -->
-                            <p>08:00 AM - 09:00 AM</p>
+                        <h4>International Conference on Art</h4>
+                        <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in
+                            written on charmed justice is amiable farther besides. Law insensible middletons unsatiable
+                            for apartments boy delightful unreserved.</p>
+                        <div class="content-foot">
+                            <div class="location">
+                                <p>California, TX 70240</p>
+                            </div>
+                            <div class="buttun-event">
+                                <button>JOIN EVENT</button>
+                            </div>
                         </div>
                     </div>
-                    <h4>International Conference on Art</h4>
-                    <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.</p>
-                    <div class="content-foot">
-                        <div class="location">
-                            <p>California, TX 70240</p>
-                        </div>
-                        <div class="buttun-event">
-                            <button>JOIN EVENT</button>
-                        </div>
-                    </div>
-                </div>
                 </div>
                 <div class="pic-main-div">
-                <div class="event-pic-1">
-                    <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
-                </div>
-                <div class="pic-content">
-                    <div class="date-time">
-                        <div class="calender">
-                            <!-- <img src="file:///C:/Users/DELL/Downloads/calendar-regular.svg"> -->
-                            <p>December 25,2020</p>
+                    <div class="event-pic-1">
+                        <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
+                    </div>
+                    <div class="pic-content">
+                        <div class="date-time">
+                            <div class="calender">
+                                <!-- <img src="file:///C:/Users/DELL/Downloads/calendar-regular.svg"> -->
+                                <p>December 25,2020</p>
+                            </div>
+                            <div class="time">
+                                <!-- <img src="file:///C:/Users/DELL/Downloads/clock-solid.svg"> -->
+                                <p>08:00 AM - 09:00 AM</p>
+                            </div>
                         </div>
-                        <div class="time">
-                            <!-- <img src="file:///C:/Users/DELL/Downloads/clock-solid.svg"> -->
-                            <p>08:00 AM - 09:00 AM</p>
+                        <h4>International Conference on Art</h4>
+                        <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in
+                            written on charmed justice is amiable farther besides. Law insensible middletons unsatiable
+                            for apartments boy delightful unreserved.</p>
+                        <div class="content-foot">
+                            <div class="location">
+                                <p>California, TX 70240</p>
+                            </div>
+                            <div class="buttun-event">
+                                <button>JOIN EVENT</button>
+                            </div>
                         </div>
                     </div>
-                    <h4>International Conference on Art</h4>
-                    <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.</p>
-                    <div class="content-foot">
-                        <div class="location">
-                            <p>California, TX 70240</p>
-                        </div>
-                        <div class="buttun-event">
-                            <button>JOIN EVENT</button>
-                        </div>
-                    </div>
-                </div>
                 </div>
                 <div class="pic-main-div">
-                <div class="event-pic-1">
-                    <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
-                </div>
-                <div class="pic-content">
-                    <div class="date-time">
-                        <div class="calender">
-                            <!-- <img src="./assets/calendar-regular.svg"> -->
-                            <p>December 25,2020</p>
+                    <div class="event-pic-1">
+                        <img src="https://validthemes.net/site-template/edukat/assets/img/event/11.jpg">
+                    </div>
+                    <div class="pic-content">
+                        <div class="date-time">
+                            <div class="calender">
+                                <!-- <img src="./assets/calendar-regular.svg"> -->
+                                <p>December 25,2020</p>
+                            </div>
+                            <div class="time">
+                                <!-- <img src="./assets/clock-solid.svg"> -->
+                                <p>08:00 AM - 09:00 AM</p>
+                            </div>
                         </div>
-                        <div class="time">
-                            <!-- <img src="./assets/clock-solid.svg"> -->
-                            <p>08:00 AM - 09:00 AM</p>
+                        <h4>International Conference on Art</h4>
+                        <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in
+                            written on charmed justice is amiable farther besides. Law insensible middletons unsatiable
+                            for apartments boy delightful unreserved.</p>
+                        <div class="content-foot">
+                            <div class="location">
+                                <p>California, TX 70240</p>
+                            </div>
+                            <div class="buttun-event">
+                                <button>JOIN EVENT</button>
+                            </div>
                         </div>
                     </div>
-                    <h4>International Conference on Art</h4>
-                    <p>Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.</p>
-                    <div class="content-foot">
-                        <div class="location">
-                            <p>California, TX 70240</p>
-                        </div>
-                        <div class="buttun-event">
-                            <button>JOIN EVENT</button>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -271,7 +310,8 @@
                     <h2>Course Advisor</h2>
                 </div>
                 <div class="course-advisor-part2">
-                    <p>Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.</p>
+                    <p>Everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated
+                        estimating excellence an to impression.</p>
                     <button>VIEW ALL+</button>
                 </div>
             </div>
@@ -282,35 +322,38 @@
             <div class="pic-1">
                 <img src="https://validthemes.net/site-template/edukat/assets/img/advisor/7.jpg" alt="">
                 <div class="pic1-content">
-                <h3>Prof. Deol Jones</h3>
-                <p>Science Specialist</p>
+                    <h3>Prof. Deol Jones</h3>
+                    <p>Science Specialist</p>
                 </div>
             </div>
             <div class="pic-1">
                 <img src="https://validthemes.net/site-template/edukat/assets/img/advisor/7.jpg" alt="">
                 <div class="pic1-content">
-                <h3>Prof. Deol Jones</h3>
-                <p>Science Specialist</p>
+                    <h3>Prof. Deol Jones</h3>
+                    <p>Science Specialist</p>
                 </div>
             </div>
             <div class="pic-1">
                 <img src="https://validthemes.net/site-template/edukat/assets/img/advisor/7.jpg" alt="">
                 <div class="pic1-content">
-                <h3>Prof. Deol Jones</h3>
-                <p>Science Specialist</p>
+                    <h3>Prof. Deol Jones</h3>
+                    <p>Science Specialist</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="last-section"> 
+    <section id="last-section">
         <div class="container last-sec">
             <div class="content-last">
                 <h2>Take a short tour in our campus</h2>
-                <p>Tolerably behaviour may admitting daughters offending her ask own. Praise effect wishes change way and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if mr narrow points. Melancholy particular devonshire alteration it favourable appearance</p>
+                <p>Tolerably behaviour may admitting daughters offending her ask own. Praise effect wishes change way
+                    and any wanted. Lively use looked latter regard had. Do he it part more last in. Merits ye if mr
+                    narrow points. Melancholy particular devonshire alteration it favourable appearance</p>
                 <i class="fa-brands fa-square-youtube"></i>
             </div>
         </div>
     </section>
     <script src="./home.js"></script>
 </body>
+
 </html>
