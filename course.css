@@ -112,6 +112,7 @@
     padding: 8px 15px;
     color: black;
     display: inline-block;
+    font-weight: bold;
     
 }
 .pagination button.active{
