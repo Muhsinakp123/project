@@ -109,12 +109,6 @@
     display: flex;
     flex-direction: column;
 }
-body {
-  padding: 3rem;
- 
-}
-
-
 
 [data-countup] {
   font-size: 3rem;
@@ -283,3 +277,86 @@ body {
  .event-pic img {
     border-radius: 10px;
  }
+ /* red background */
+
+ #red-bg {
+    margin-top: 30px;
+    background-image: linear-gradient(97deg, rgba(203, 1, 43, 1) 36%, rgba(255, 25, 73, 1) 100%);
+    background-color: #FF1949;
+    min-height: 240px;
+    padding-top: 55px;
+ }
+ .red-bg-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+ }
+ #course-advisor {
+    margin-top: 40px;
+ }
+ .course-advisor-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.course-advisor-part1 {
+    max-width: 50%;
+}
+.course-advisor-part2 {
+    max-width: 50%;
+}
+.course-advisor-part1 h4 {
+    color: #666666;
+    margin-bottom: 24px;
+}
+.course-advisor-part1 h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.course-advisor-part2 p {
+    color: #666666;
+    margin-bottom: 24px;
+}
+.course-advisor-part2 button {
+    padding: 15px 25px;
+    background: linear-gradient(90deg, rgba(212, 4, 47, 1) 0%, rgba(255, 25, 73, 1) 75%);
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+
+.pic-1 {
+    margin-bottom: 40px;
+}
+.pic1-content {
+    box-shadow: 1px 4px 20px -2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.pic-1 {
+    padding-bottom : 20px;
+}
+.advisor-pic {
+    display: flex;
+    gap: 20px;
+}
+#last-section {
+    background: url(https://validthemes.net/site-template/edukat/assets/img/banner/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-last {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+
+  
