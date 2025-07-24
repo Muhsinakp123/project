@@ -1,0 +1,126 @@
+#top {
+    background-image: url(https://validthemes.net/site-template/edukat/assets/img/banner/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    display: grid;
+    place-content: center;
+    min-height: 50vh;
+}
+
+#bottom {
+    min-height: 100vh;
+    background-color: #EFEFEF;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.image-content {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+.card-image {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-image .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(114, 165, 201, 0.3); 
+    pointer-events: none;
+}
+
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    margin: 0;
+}
+
+.button {
+    border: none;
+    background-color: rgb(233, 74, 74);
+    color: #fff;
+    font-size: 13px;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: red;
+}
+.pagination{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.pagination button{
+    padding: 8px 15px;
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    
+}
+.pagination button.active{
+    font-weight: bold;
+    background-color: rgb(216, 19, 19);
+    border-radius: 5px;
+}
+.pagination button:hover:not(.active){
+    background-color: rgb(226, 224, 224);
+    border-radius: 5px;
+}
