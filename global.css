@@ -240,6 +240,23 @@ hr{
     display: flex;
     gap: 10px;    
 }
+.column-4 p{
+    color:#cccccc;
+    font-weight: 400;
+}
+.column-4 span{
+    font-weight: bold;
+    color:white;
+
+}
+.open-hours{
+    display: flex;
+    gap: 20px;
+}
+.open-hours li{
+    color: #cccccc;
+    font-weight: 400;
+}
 
 .footer-bottom{
     display: flex;
@@ -251,5 +268,6 @@ hr{
     gap:30px;
     font-weight: bold;    
 }
+
 
  
