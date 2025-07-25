@@ -53,7 +53,7 @@ let video = document.querySelector('video');
 btn.onclick = function () {
   btn.classList.add('active');
   clip.classList.add('active');
-  video.play();
+  // video.play();
   video.currentTime = 0;
 }
 close.onclick = function () {
