@@ -42,3 +42,14 @@ ul {
     border: 0;
     outline: none;
 }
+
+.hr {
+    border-bottom: 1px solid black;
+    height: 1px;
+    width: 100%;
+}
+.vr {
+    border-right: 1px solid #e0dcdc;
+    height: 100%;
+    margin: 0 15px;
+}
