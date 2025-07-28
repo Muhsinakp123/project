@@ -1,5 +1,5 @@
 #first-section {
-    background: url(https://t4.ftcdn.net/jpg/15/61/85/73/240_F_1561857355_eWrTRsOJvp10WT35LfHe5hw0NzXHnjZy.jpg);
+    background: url(./assets/home-banner.webp);
     min-height: 447px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +30,7 @@
     color: white;
     font-size: 14px;
     border: none;
+    border-radius: 5px;
 }
 #facilities {
     margin-top: 50px;
@@ -44,6 +45,7 @@
 .facility-img  img {
     min-height: 800px;
     max-width: 666px;
+    border-radius: 15px;
 }
 .icon img {
     border: none;
@@ -161,26 +163,30 @@ h1 {
     max-width: 30px;
 } */
  .text-in-pic1 {
-    background: url(https://validthemes.net/site-template/edukat/assets/img/category/3.jpg);
+    /* background: url(https://validthemes.net/site-template/edukat/assets/img/category/3.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
  }
  .department-pic {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 219px 219px;
-    gap: 30px;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    position: relative;
  }
  .department-pic img {
-    max-width: 350px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
  }
 .text-in-pic1 h4 {
     display: flex;
     justify-content: center;
     color: white;
     font-size: 20px;
-    padding-top: 130px;
+    position: absolute;
+    bottom: 3rem;
 }
 #scholarship {
     background-color: #f2fcfe;
@@ -231,6 +237,7 @@ h1 {
     color: white;
     font-size: 14px;
     border: none;
+    border-radius: 10px;
 }
 .scholar-content {
     display: flex;
@@ -281,6 +288,7 @@ h1 {
     position: absolute;
     top: 300px;
     left: 30px;
+    border-radius: 15px;
  }
  .content-foot {
     display: flex;
@@ -355,19 +363,16 @@ h1 {
     border: none;
     border-radius: 10px;
 }
-
-.pic-1 {
-    margin-bottom: 40px;
-}
 .pic1-content {
     box-shadow: 1px 4px 20px -2px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    border-radius: 10px;
 }
-.pic-1 {
-    padding-bottom : 20px;
+.pic-1 img {
+    border-radius: 10px;
 }
 .advisor-pic {
     display: flex;
@@ -474,5 +479,83 @@ h1 {
   text-transform: uppercase;
   color: #fff;
 }
+/* Smooth scroll stuff */
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}    
+
+.js-cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.js-scroll {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    will-change: transform;
+}
+
+
+
+
+/* Content stuff */
+body {
+    /* position: relative;
+    font-family: 'Courier';
+    font-size: 16px;
+    overflow: hidden;
+    width: 100%;
+    height: 2000px; */
+    /* color: #fff; */
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    /* background: #090446; */
+
+    &:after {
+		/* content: ''; */
+		/* background: #090446; */
+		/* background: linear-gradient(to bottom, #090446 0%,#5f0d18 100%); */
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		z-index: -1;
+	}
+}
+
+/* .full-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    h1 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: lighter;
+    }
+} */
+
+/* .content {
+    width: 76%;
+    margin: 0 auto 300px;
+    
+    a {
+        color: #fff;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+} */
 
   

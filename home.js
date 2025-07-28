@@ -37,11 +37,11 @@
 
 
 document.addEventListener('aos:in', ({ detail }) => {
-  console.log('animated in', detail);
+  // console.log('animated in', detail);
 });
 
 document.addEventListener('aos:out', ({ detail }) => {
-  console.log('animated out', detail);
+  // console.log('animated out', detail);
 });
 
 // youtube 
@@ -61,3 +61,140 @@ close.onclick = function () {
   clip.classList.remove('active');
   video.pause();
 }
+
+const newEvents = [
+  {
+    image: "./assets/event-pic-1.png",
+    date: 'December 25,2020',
+    time: '08:00 AM - 09:00 AM',
+    title: 'International Conference on Art',
+    description: "Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.",
+    location: 'California, TX 70240',
+    joinLink: ''
+  },
+  {
+    image: "./assets/event-pic-1.png",
+    date: 'December 30,2025',
+    time: '08:00 AM - 09:00 AM',
+    title: 'International Conference on Art',
+    description: "Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.",
+    location: 'California, TX 70240',
+    joinLink: ''
+  },
+  {
+    image: "./assets/event-pic-1.png",
+    date: 'December 25,2020',
+    time: '08:00 AM - 09:00 AM',
+    title: 'International Conference on Art',
+    description: "Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.",
+    location: 'California, TX 70240',
+    joinLink: ''
+  },
+  {
+    image: "./assets/event-pic-1.png",
+    date: 'December 25,2020',
+    time: '08:00 AM - 09:00 AM',
+    title: 'International Conference on Art',
+    description: "Early had add equal china quiet visit. Appear an manner as no limits either praise in. In in written on charmed justice is amiable farther besides. Law insensible middletons unsatiable for apartments boy delightful unreserved.",
+    location: 'California, TX 70240',
+    joinLink: ''
+  }
+]
+
+
+const renderNewEvents = () => {
+  let eventList = ''
+  const newEventContainer = document.getElementById('new-event-container')
+
+  newEvents.forEach((item) => {
+    eventList += ` <div class="pic-main-div">
+                    <div class="event-pic-1">
+                        <img src="${item.image}">
+                    </div>
+                    <div class="pic-content">
+                        <div class="date-time">
+                            <div class="calender">
+                                <p>${item.date}</p>
+                            </div>
+                            <div class="time">
+                               
+                                <p>${item.time}</p>
+                            </div>
+                        </div>
+                        <h4>${item.title}</h4>
+                        <p>${item.description}</p>
+                        <div class="content-foot">
+                            <div class="location">
+                                <p>${item.location}</p>
+                            </div>
+                            <div class="buttun-event">
+                                <button>JOIN EVENT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+  })
+
+  newEventContainer.innerHTML = eventList
+}
+
+renderNewEvents()
+
+// departments
+const departments = [
+  {
+    image: "./assets/department-pic.jpg",
+    heading: "Artificial intelligence"
+  },
+  {
+    image: "./assets/department-pic.jpg",
+    heading: "Artificial intelligence"
+  },
+  {
+    image: "./assets/department-pic.jpg",
+    heading: "Artificial intelligence"
+  },
+  {
+    image: "./assets/department-pic.jpg",
+    heading: "Artificial intelligence"
+  },
+  {
+    image: "./assets/department-pic.jpg",
+    heading: "Artificial intelligence"
+  },
+  {
+    image: "./assets/department-pic.jpg",
+    heading: "Artificial intelligence"
+  }
+]
+  // < div class="text-in-pic1" data - aos="zoom-in" >
+  //   <h4>Artificial Intelligence</h4>
+  //               </ >
+
+// const departmentPic = document.querySelector('.department-pic  ');
+
+// const renderDepartments = () => {
+//   departments.map((postData) => {
+//     const postElement = document.createElement('div');
+//     postElement.classList.add('department-pic');
+//     postElement.innerHTML = `
+//     <div class="text-in-pic1" data - aos="zoom-in" >
+//     <h4>Artificial Intelligence</h4></div >
+//     `
+//     departmentPic.appendChild(postElement)
+//   })
+// }
+// renderDepartments()
+const renderDepartments = () => {
+  let departmentList = ''
+  const departmentContainer = document.getElementById('department-Container')
+  departments.forEach ((item)=>{
+    departmentList += `
+          <div class="text-in-pic1" data-aos="zoom-in">
+            <img src="${item.image}">
+            <h4>${item.heading}</h4>
+          </div>`
+  })
+  departmentContainer.innerHTML = departmentList
+}
+renderDepartments()
