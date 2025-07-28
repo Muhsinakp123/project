@@ -1,0 +1,167 @@
+.breadcrumps{
+    display: flex;
+}
+#main-sec{
+    background:url(https://validthemes.net/site-template/edukat/assets/img/banner/17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px; 
+} 
+
+.breadcrumps-area{
+    display: grid;
+    place-content: center;
+    min-height: 400px;
+    color: white;  
+} 
+
+.breadcrumps li a{
+    color: white;    
+}
+
+.breadcrumps{
+    gap: 8px;
+}
+
+.contact-us{
+    padding-bottom: 5px; 
+}
+
+.left-column{
+    padding-right: 35px;
+    padding-left: 30px;
+    display: grid;
+    place-content: center; 
+}
+
+.info{
+    max-width: 300px;   
+}
+
+.info h4{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:black;   
+}
+
+.info p{
+    color:#666666;
+}
+
+.icon{
+    display: grid;
+    padding-top: 20px;
+    padding-right: 20px;  
+}
+
+.item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.need-help {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    border-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.right-column{
+    border: solid;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    color:#888888;
+    padding-left: 30px;
+    border-width: thin;
+    margin-top: 40px;
+    margin-bottom: 40px;    
+}
+
+.right-column h5{
+    padding-top: 40px;
+    font-weight: 800;
+    color: #888888;
+    padding-bottom: 15px;
+}
+
+.right-column h2{    
+    padding-bottom: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+.form {
+    display: grid;
+    padding-right: 60px;
+}
+
+.form input{
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 15px;
+    border-width:thin;
+    padding-top: 15px;
+    color:#888888;  
+    width: 690px;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;   
+}
+
+.email-phone input{
+    width: 330px;
+}
+
+textarea{
+    border: solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-width:thin;
+    color:#888888;
+    border-top: none;
+    border-left: none;
+    border-right: none;  
+    width: 690px;  
+    height: 200px;    
+}
+
+.send{
+    color: white;
+    background-color:var(--primary-color);
+    padding: 10px 40px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input:focus,
+    textarea:focus{
+        outline:none;
+    }
+
+.responsive-map{
+ overflow: hidden;
+ padding-bottom:39.25%;
+ position:relative;
+ height:0;
+}
+
+.responsive-map iframe{
+ left:0;
+ top:0;
+ height:600px;
+ width:100%;
+ position:absolute;
+
+}
+
+
+
