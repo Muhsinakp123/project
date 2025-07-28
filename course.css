@@ -1,7 +1,16 @@
 #top {
-    background-image: url(https://validthemes.net/site-template/edukat/assets/img/banner/12.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: relative;
+  background-image: url(https://validthemes.net/site-template/edukat/assets/img/banner/12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+#top::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .heading {
