@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 400px; 
-} 
+}
 
 .breadcrumps-area{
     display: grid;
@@ -140,6 +140,7 @@ textarea{
     border: none;
     border-radius: 5px;
     font-weight: bold;
+    position: relative;
 }
 
 input:focus,
@@ -162,6 +163,4 @@ input:focus,
  position:absolute;
 
 }
-
-
 
